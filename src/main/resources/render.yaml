@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: warehouse-api
+    runtime: docker
+    repo: https://github.com/USERNAME_GITHUB_KAMU/NAMA_REPO_KAMU
+    plan: free
+    region: sin
+    envVars:
+      - key: PORT
+        value: 8080
