@@ -11,6 +11,12 @@ API built with Spring Boot 3.x, Java 17+, and Supabase (PostgreSQL).
 Once running, you can fully test and view all endpoints via Swagger UI:
  http://localhost:8080/swagger-ui/index.html
 
+or:
+http://tales-ratings-giving-meaningful.trycloudflare.com/swagger-ui/index.html
+
+or if you have postman you can use postman. if you don't have postman, you can use this to import collection
+https://dimasfath1994.github.io/postdimtrial
+
 ## Design Decisions
 - **Java Records:** Used for DTOs to ensure data immutability and zero boilerplate.
 - **RFC 7807 Problem Details:** Implemented modern REST exception handling via `ProblemDetail` for standardized API error responses.
