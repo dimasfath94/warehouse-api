@@ -1,0 +1,475 @@
+{
+	"info": {
+		"_postman_id": "33a747f7-5dfe-4f7c-bffb-de7c884dfa94",
+		"name": "warehouse-api-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all items including their variants",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "https://tales-ratings-giving-meaningful.trycloudflare.com/api/items",
+					"protocol": "https",
+					"host": [
+						"tales-ratings-giving-meaningful",
+						"trycloudflare",
+						"com"
+					],
+					"path": [
+						"api",
+						"items"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/items",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"items"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "*/*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n  {\n    \"id\": \"b5afdd13-01a1-ae76-5e21-e917c4d72c01\",\n    \"name\": \"string\",\n    \"description\": \"string\",\n    \"variants\": [\n      {\n        \"id\": \"08691f1f-5042-87be-0731-208657ef0698\",\n        \"item\": {\n          \"value\": \"<Circular reference to #/components/schemas/Item detected>\"\n        },\n        \"sku\": \"string\",\n        \"name\": \"string\",\n        \"price\": 1161.8055866349764,\n        \"stockQuantity\": 424,\n        \"version\": 2333\n      },\n      {\n        \"id\": \"b2e80645-4eb9-cc93-d1e8-b76e1e5e1ebd\",\n        \"item\": {\n          \"value\": \"<Circular reference to #/components/schemas/Item detected>\"\n        },\n        \"sku\": \"string\",\n        \"name\": \"string\",\n        \"price\": 5251.534902811947,\n        \"stockQuantity\": 1911,\n        \"version\": 7521\n      }\n    ]\n  },\n  {\n    \"id\": \"1ccc5177-4a97-aa7a-c51d-96f3d31d2b43\",\n    \"name\": \"string\",\n    \"description\": \"string\",\n    \"variants\": [\n      {\n        \"id\": \"6a5f0925-2965-f77e-8d0d-073545954ee0\",\n        \"item\": {\n          \"value\": \"<Circular reference to #/components/schemas/Item detected>\"\n        },\n        \"sku\": \"string\",\n        \"name\": \"string\",\n        \"price\": 9891.583465738318,\n        \"stockQuantity\": 4149,\n        \"version\": 4530\n      },\n      {\n        \"id\": \"c86274f3-3815-543d-9fa6-87cb5094939e\",\n        \"item\": {\n          \"value\": \"<Circular reference to #/components/schemas/Item detected>\"\n        },\n        \"sku\": \"string\",\n        \"name\": \"string\",\n        \"price\": 1213.5023303521052,\n        \"stockQuantity\": 6415,\n        \"version\": 2291\n      }\n    ]\n  }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create a new item with its variants",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"string\",\n  \"variants\": [\n    {\n      \"name\": \"string\",\n      \"price\": 8877.46571535841,\n      \"sku\": \"string\",\n      \"stockQuantity\": 5709\n    },\n    {\n      \"name\": \"string\",\n      \"price\": 6673.848765374612,\n      \"sku\": \"string\",\n      \"stockQuantity\": 5680\n    }\n  ],\n  \"description\": \"string\"\n}",
+					"options": {
+						"raw": {
+							"headerFamily": "json",
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tales-ratings-giving-meaningful.trycloudflare.com/api/items",
+					"protocol": "https",
+					"host": [
+						"tales-ratings-giving-meaningful",
+						"trycloudflare",
+						"com"
+					],
+					"path": [
+						"api",
+						"items"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"string\",\n  \"variants\": [\n    {\n      \"name\": \"string\",\n      \"price\": 8877.46571535841,\n      \"sku\": \"string\",\n      \"stockQuantity\": 5709\n    },\n    {\n      \"name\": \"string\",\n      \"price\": 6673.848765374612,\n      \"sku\": \"string\",\n      \"stockQuantity\": 5680\n    }\n  ],\n  \"description\": \"string\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/items",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"items"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "*/*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"id\": \"81e05435-dab8-945a-1f7d-68e1c05f8d5b\",\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"variants\": [\n    {\n      \"id\": \"c59c527a-a680-407c-9d96-d9a7b149b6f7\",\n      \"item\": {\n        \"value\": \"<Circular reference to #/components/schemas/Item detected>\"\n      },\n      \"sku\": \"string\",\n      \"name\": \"string\",\n      \"price\": 1429.3138631772772,\n      \"stockQuantity\": 6007,\n      \"version\": 6759\n    },\n    {\n      \"id\": \"53cef7b0-c583-e84a-b683-cd7244834de4\",\n      \"item\": {\n        \"value\": \"<Circular reference to #/components/schemas/Item detected>\"\n      },\n      \"sku\": \"string\",\n      \"name\": \"string\",\n      \"price\": 2157.2587717424517,\n      \"stockQuantity\": 938,\n      \"version\": 9257\n    }\n  ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Deduct stock for multiple items (Simulate order/sale with race-condition protection)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"quantity\": 5630,\n    \"sku\": \"string\"\n  },\n  {\n    \"quantity\": 1106,\n    \"sku\": \"string\"\n  }\n]",
+					"options": {
+						"raw": {
+							"headerFamily": "json",
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tales-ratings-giving-meaningful.trycloudflare.com/api/items/deduct-stock",
+					"protocol": "https",
+					"host": [
+						"tales-ratings-giving-meaningful",
+						"trycloudflare",
+						"com"
+					],
+					"path": [
+						"api",
+						"items",
+						"deduct-stock"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"quantity\": 5630,\n    \"sku\": \"string\"\n  },\n  {\n    \"quantity\": 1106,\n    \"sku\": \"string\"\n  }\n]",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/items/deduct-stock",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"items",
+								"deduct-stock"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "Get an item by its UUID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "https://tales-ratings-giving-meaningful.trycloudflare.com/api/items/:id",
+					"protocol": "https",
+					"host": [
+						"tales-ratings-giving-meaningful",
+						"trycloudflare",
+						"com"
+					],
+					"path": [
+						"api",
+						"items",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "ca78485e-fc8a-3e3a-7b09-c2c25be71967"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/items/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"items",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "ca78485e-fc8a-3e3a-7b09-c2c25be71967"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "*/*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"id\": \"81e05435-dab8-945a-1f7d-68e1c05f8d5b\",\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"variants\": [\n    {\n      \"id\": \"c59c527a-a680-407c-9d96-d9a7b149b6f7\",\n      \"item\": {\n        \"value\": \"<Circular reference to #/components/schemas/Item detected>\"\n      },\n      \"sku\": \"string\",\n      \"name\": \"string\",\n      \"price\": 1429.3138631772772,\n      \"stockQuantity\": 6007,\n      \"version\": 6759\n    },\n    {\n      \"id\": \"53cef7b0-c583-e84a-b683-cd7244834de4\",\n      \"item\": {\n        \"value\": \"<Circular reference to #/components/schemas/Item detected>\"\n      },\n      \"sku\": \"string\",\n      \"name\": \"string\",\n      \"price\": 2157.2587717424517,\n      \"stockQuantity\": 938,\n      \"version\": 9257\n    }\n  ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Update an existing item and its variants by UUID",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"string\",\n  \"variants\": [\n    {\n      \"name\": \"string\",\n      \"price\": 8877.46571535841,\n      \"sku\": \"string\",\n      \"stockQuantity\": 5709\n    },\n    {\n      \"name\": \"string\",\n      \"price\": 6673.848765374612,\n      \"sku\": \"string\",\n      \"stockQuantity\": 5680\n    }\n  ],\n  \"description\": \"string\"\n}",
+					"options": {
+						"raw": {
+							"headerFamily": "json",
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tales-ratings-giving-meaningful.trycloudflare.com/api/items/:id",
+					"protocol": "https",
+					"host": [
+						"tales-ratings-giving-meaningful",
+						"trycloudflare",
+						"com"
+					],
+					"path": [
+						"api",
+						"items",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "ca78485e-fc8a-3e3a-7b09-c2c25be71967"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"string\",\n  \"variants\": [\n    {\n      \"name\": \"string\",\n      \"price\": 8877.46571535841,\n      \"sku\": \"string\",\n      \"stockQuantity\": 5709\n    },\n    {\n      \"name\": \"string\",\n      \"price\": 6673.848765374612,\n      \"sku\": \"string\",\n      \"stockQuantity\": 5680\n    }\n  ],\n  \"description\": \"string\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/items/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"items",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "ca78485e-fc8a-3e3a-7b09-c2c25be71967"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "*/*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"id\": \"81e05435-dab8-945a-1f7d-68e1c05f8d5b\",\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"variants\": [\n    {\n      \"id\": \"c59c527a-a680-407c-9d96-d9a7b149b6f7\",\n      \"item\": {\n        \"value\": \"<Circular reference to #/components/schemas/Item detected>\"\n      },\n      \"sku\": \"string\",\n      \"name\": \"string\",\n      \"price\": 1429.3138631772772,\n      \"stockQuantity\": 6007,\n      \"version\": 6759\n    },\n    {\n      \"id\": \"53cef7b0-c583-e84a-b683-cd7244834de4\",\n      \"item\": {\n        \"value\": \"<Circular reference to #/components/schemas/Item detected>\"\n      },\n      \"sku\": \"string\",\n      \"name\": \"string\",\n      \"price\": 2157.2587717424517,\n      \"stockQuantity\": 938,\n      \"version\": 9257\n    }\n  ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete an item and all its variants",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://tales-ratings-giving-meaningful.trycloudflare.com/api/items/:id",
+					"protocol": "https",
+					"host": [
+						"tales-ratings-giving-meaningful",
+						"trycloudflare",
+						"com"
+					],
+					"path": [
+						"api",
+						"items",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "ca78485e-fc8a-3e3a-7b09-c2c25be71967"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/items/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"items",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "ca78485e-fc8a-3e3a-7b09-c2c25be71967"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://tales-ratings-giving-meaningful.trycloudflare.com"
+		}
+	]
+}
